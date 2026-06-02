@@ -3,10 +3,10 @@ import { Search, CirclePlus, ChevronDown } from "lucide-react";
 function Dashboard() {
   return (
     <>
-      <div className="content-container">
-        <div className="filters">
+      <main className="content-container">
+        <aside className="filters">
           <div className="filter restrictions">
-            <p>Dietary Restrictions</p>
+            <h3>Dietary Restrictions</h3>
             <div className="checkboxes">
               <input type="checkbox" name="vegan" id="vegan" />
               <label htmlFor="vegan">Vegan</label>
@@ -25,8 +25,8 @@ function Dashboard() {
             <button className="meal-btn">Diner</button>
             <button className="meal-btn">Snacks</button>
           </div>
-        </div>
-        <div className="main-content">
+        </aside>
+        <section className="main-content">
           <div className="heading">
             <h1>What's in your pantry?</h1>
             <p>
@@ -46,14 +46,14 @@ function Dashboard() {
           <div className="results"></div>
           <div className="load-more">
             <button>
-              Browse All Recipes{" "}
+              Browse All Recipes
               <span>
                 <ChevronDown />
               </span>
             </button>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 }
