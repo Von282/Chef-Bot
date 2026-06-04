@@ -44,7 +44,7 @@
 
 /* Footer */
 .footer {
-  padding: 64px var(--margin-desktop);
+  padding: 48px var(--margin-desktop);
   background: var(--surface-container);
   text-align: center;
   display: flex;
