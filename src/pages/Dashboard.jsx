@@ -80,26 +80,26 @@ function Dashboard() {
               </div>
               <div className="added-ingredient-tags">
                 <span class="ingredients-label">Active:</span>
-                {/* <div className="ingredients-wrapper"> */}
-                <div class="ingredient-chip">
-                  <span>Spinach</span>
-                  <span class=" icon chip-close">
-                    <X size={14} />
-                  </span>
+                <div className="ingredients-wrapper">
+                  <div class="ingredient-chip">
+                    <span>Spinach</span>
+                    <span class=" icon chip-close">
+                      <X size={14} />
+                    </span>
+                  </div>
+                  <div class="ingredient-chip">
+                    <span>Quinoa</span>
+                    <span class=" icon chip-close">
+                      <X size={14} />
+                    </span>
+                  </div>
+                  <div class="ingredient-chip">
+                    <span>Avocado</span>
+                    <span class=" icon chip-close">
+                      <X size={14} />
+                    </span>
+                  </div>
                 </div>
-                <div class="ingredient-chip">
-                  <span>Quinoa</span>
-                  <span class=" icon chip-close">
-                    <X size={14} />
-                  </span>
-                </div>
-                <div class="ingredient-chip">
-                  <span>Avocado</span>
-                  <span class=" icon chip-close">
-                    <X size={14} />
-                  </span>
-                </div>
-                {/* </div> */}
                 <button className="generate-btn">Generate</button>
               </div>
 
