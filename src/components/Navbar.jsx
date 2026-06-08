@@ -12,7 +12,7 @@ function Navbar() {
           <span>
             <ChefHat strokeWidth={2.5} />
           </span>{" "}
-          Chef Bot-Ardee
+          <span className="chef">Chef Bot-Ardee</span>
         </div>
         <div className="nav-links">
           <a className="nav-link active label-md" href="#">

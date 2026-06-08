@@ -60,6 +60,10 @@
   .navbar {
     padding: 0 var(--margin-mobile);
   }
+
+  .chef {
+    display: none;
+  }
 }
 
 .nav-links {
@@ -68,11 +72,11 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
-}
+} */
 
 .nav-link {
   text-decoration: none;
