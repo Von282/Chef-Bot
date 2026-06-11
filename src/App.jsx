@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Recipe from "./pages/Recipe.jsx";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       {/* <Home /> */}
       {/* <Dashboard /> */}
-      <Pricing />
+      {/* <Pricing /> */}
+      <Recipe />
       <Footer />
     </>
   );

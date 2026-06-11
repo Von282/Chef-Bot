@@ -21,9 +21,9 @@ function Navbar() {
           <a className="nav-link label-md" href="#">
             Dashboard
           </a>
-          <a className="nav-link label-md" href="#">
+          {/* <a className="nav-link label-md" href="#">
             Recipes
-          </a>
+          </a> */}
           <a className="nav-link label-md" href="#">
             Pricing
           </a>
