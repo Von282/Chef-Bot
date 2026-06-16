@@ -15,16 +15,16 @@ function Navbar() {
           <span className="chef">Chef Bot-Ardee</span>
         </div>
         <div className="nav-links">
-          <a className="nav-link active label-md" href="#">
+          <a className="nav-link active label-md" href="../pages/Home.jsx">
             Explore
           </a>
-          <a className="nav-link label-md" href="#">
+          <a className="nav-link label-md" href="../pages/Dashboard.jsx">
             Dashboard
           </a>
           {/* <a className="nav-link label-md" href="#">
             Recipes
           </a> */}
-          <a className="nav-link label-md" href="#">
+          <a className="nav-link label-md" href="../pages/Pricing.jsx">
             Pricing
           </a>
         </div>

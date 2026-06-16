@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Recipe from "./pages/Recipe.jsx";
+import Profile from "./pages/Profile.jsx";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Home /> */}
       {/* <Dashboard /> */}
       {/* <Pricing /> */}
-      <Recipe />
+      {/* <Recipe /> */}
+      <Profile />
       <Footer />
     </>
   );

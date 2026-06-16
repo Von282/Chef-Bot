@@ -51,7 +51,7 @@
   background: var(--background);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 var(--margin-desktop);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -72,6 +72,7 @@
   display: flex;
   gap: var(--gutter);
   align-items: center;
+  margin-right: 3rem;
 }
 
 /* @media (max-width: 768px) {
@@ -97,9 +98,9 @@
   font-weight: 700;
 }
 
-/* .headline-sm {
+.navbar > .headline-sm {
   margin-right: auto;
-} */
+}
 
 .headline-sm > span {
   margin-top: 1rem;
@@ -108,9 +109,11 @@
 .noti {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .profile-pic {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
