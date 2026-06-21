@@ -12,11 +12,12 @@ import {
   Dumbbell,
 } from "lucide-react";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
     <>
-      <main className="content-container">
+      <main className="content-container-dashboard">
         <aside className="filters">
           <div className="filter restrictions">
             <h3>Dietary Restrictions</h3>
@@ -56,9 +57,9 @@ function Dashboard() {
             </div>
           </div>
         </aside>
-        <section className="main-content">
+        <section className="main-content-dashboard">
           <div className="upper-dashboard">
-            <div className="heading">
+            <div className="dashboard-heading">
               <h1>What's in your pantry?</h1>
               <p>
                 Enter your ingredients and let our culinary AI craft a
@@ -100,7 +101,7 @@ function Dashboard() {
                     </span>
                   </div>
                 </div>
-                <button className="generate-btn">Generate</button>
+                <button className="generate-recipe-btn">Generate</button>
               </div>
 
               <div class="ai-status-bar hidden" id="statusArea">
@@ -118,7 +119,7 @@ function Dashboard() {
               <div className="card-image-wrapper">
                 <img
                   alt="Mediterranean Bowl"
-                  class="card-image"
+                  className="card-image"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxmv24ETjfXrM0L6t3UA6ySgHupAHnXgqGS0chdTZEssyxmPnNzc5vvoQeca8f-XKU3K6qNlcwgApMLVTeW3_sNe_hw0WTQ1yZGqgLdwoZ_OETnuK0iu8sTJhV68rSvhLI6DBd1MBVEyYL6DXgoLWDuk8kyOoveRh7Iym2lZCT2xf4C0D6n7X-IW8hZ1yHY4odh50R_iASCfp0TTQKwx3ms_ky5Lllxwfu2tDXP5Bx_MRSAtvqm2WyI6JyjI5vodWVrUH1qZTs3e0"
                 />
                 <div className="diet-badge">
@@ -151,7 +152,9 @@ function Dashboard() {
                   </div>
                   <button className="view-recipe-btn">
                     <span className=" icon view-recipe-icon">
-                      <ArrowRight size={14} strokeWidth={1.5} />
+                      <Link to={"/recipe"} className="recipe-go-to">
+                        <ArrowRight size={14} strokeWidth={1.5} />
+                      </Link>
                     </span>
                   </button>
                 </div>
@@ -161,7 +164,7 @@ function Dashboard() {
               <div className="card-image-wrapper">
                 <img
                   alt="Mediterranean Bowl"
-                  class="card-image"
+                  className="card-image"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs_uRksqTZToAmikr8rC2ilsIXl52Qhrnsqy_wTBkywgL0KUm7meC9xFcD2M68dSVa2VUsAHkHdRELajwhAaGlZbNGq0a2FVPKQL2MqV7rofIzmrUbHH_RTvCVBxkrdZkuDR96gGaCtvjQhWUUROZxOCylGzQkNUlX6PxclOo5YFaguOesur5tKdB6sgp9d7DfekGWgPD1gGEdndcd3WaCrpr2Z1MgPfFMmppPHpR-EohBhmd1PScl7zyhGmbWpXfPN6e11UhCLTM"
                 />
                 <div className="diet-badge">
@@ -194,7 +197,9 @@ function Dashboard() {
                   </div>
                   <button className="view-recipe-btn">
                     <span className=" icon view-recipe-icon">
-                      <ArrowRight size={14} strokeWidth={1.5} />
+                      <Link to={"/recipe"} className="recipe-go-to">
+                        <ArrowRight size={14} strokeWidth={1.5} />
+                      </Link>
                     </span>
                   </button>
                 </div>
@@ -204,7 +209,7 @@ function Dashboard() {
               <div className="card-image-wrapper">
                 <img
                   alt="Mediterranean Bowl"
-                  class="card-image"
+                  className="card-image"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gfp49WAasvWXkJxZ2I_Oe1mm2prRmCauD3SPxGngHajRZmpJ-cFwyngkbdnv8jOrqedh2zFUlRPK1v9uPpRVMK90v0ot8zM4CTkP3BZkM2FvCASXghiIHNCpRjznDC4ktu-7HEIF5Rw3Xw3GjAsZ-MonCpITRW9Y9wzwFiWAgDO6tboB9sU7Sl5wxC71DSk3gnRVZ5KJME2y8l7uZilYb5GyYFM52-BR78IgqZwP3A-tmIKGIMAueZFhc1cQqj46CKbCuS-lrsk"
                 />
                 <div className="diet-badge">
@@ -237,7 +242,9 @@ function Dashboard() {
                   </div>
                   <button className="view-recipe-btn">
                     <span className=" icon view-recipe-icon">
-                      <ArrowRight size={14} strokeWidth={1.5} />
+                      <Link to={"/recipe"} className="recipe-go-to">
+                        <ArrowRight size={14} strokeWidth={1.5} />
+                      </Link>
                     </span>
                   </button>
                 </div>

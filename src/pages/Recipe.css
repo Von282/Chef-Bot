@@ -308,12 +308,12 @@ h3,
 
 .macro {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .amount {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--color-primary);
 }
 

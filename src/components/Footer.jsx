@@ -26,7 +26,7 @@ function Footer() {
             Support
           </a>
         </div>
-        <p className="label-sm" style={{ color: "var(--secondary)" }}>
+        <p className="label-sm">
           © {currYear} Chef Bot-Ardee. Nourishing your health with precision.
         </p>
       </footer>

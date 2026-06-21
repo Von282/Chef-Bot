@@ -1,47 +1,60 @@
 import "./Navbar.css";
 import { Bell, ChefHat, CircleUserRound } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div
-          className="headline-sm"
-          style={{ fontWeight: "bold", color: "var(--primary)" }}
-        >
+        <div className="headline-sm">
           <span>
-            <ChefHat strokeWidth={2.5} />
+            <Link to={"/"} className="hat-link">
+              <ChefHat strokeWidth={2} size={24} className="hat" />
+            </Link>
           </span>{" "}
           <span className="chef">Chef Bot-Ardee</span>
         </div>
         <div className="nav-links">
-          <a className="nav-link active label-md" href="../pages/Home.jsx">
+          {/* <a className="nav-link active label-md" href="../pages/Home.jsx">
             Explore
-          </a>
-          <a className="nav-link label-md" href="../pages/Dashboard.jsx">
+          </a> */}
+          <Link to={"/"} className="nav-link active label-md">
+            Explore
+          </Link>
+          {/* <a className="nav-link label-md" href="../pages/Dashboard.jsx">
             Dashboard
-          </a>
+          </a> */}
+          <Link to={"/dashboard"} className="nav-link label-md">
+            Dashboard
+          </Link>
           {/* <a className="nav-link label-md" href="#">
             Recipes
           </a> */}
-          <a className="nav-link label-md" href="../pages/Pricing.jsx">
+          {/* <a className="nav-link label-md" href="../pages/Pricing.jsx">
             Pricing
-          </a>
+          </a> */}
+          <Link to={"/pricing"} className="nav-link label-md">
+            Pricing
+          </Link>
         </div>
         <div className="flex noti items-center gap-4">
           <button
             aria-label="notifications"
             style={{ background: "none", border: "none", cursor: "pointer" }}
           >
-            <span
+            {/* <span
               className="material-symbols-outlined"
               style={{ color: "var(--primary)" }}
             >
               <Bell />
-            </span>
+            </span> */}
           </button>
           <div className="profile-pic">
-            <CircleUserRound />
+            <Link to={"/profile"}>
+              <span className="profile-icon">
+                <CircleUserRound size={28} />
+              </span>
+            </Link>
           </div>
         </div>
       </nav>

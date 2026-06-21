@@ -69,3 +69,7 @@
 .footer-link:hover {
   color: var(--primary);
 }
+
+p {
+  color: var(--on-surface-variant);
+}

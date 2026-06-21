@@ -68,6 +68,17 @@
   }
 }
 
+.hat-link {
+  text-decoration: none;
+  color: var(--on-surface-variant);
+  padding-top: 5px;
+}
+
+.chef {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   gap: var(--gutter);
@@ -100,10 +111,15 @@
 
 .navbar > .headline-sm {
   margin-right: auto;
+  font-weight: "bold";
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .headline-sm > span {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .noti {
@@ -116,4 +132,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-top: 4.59px;
+}
+
+.profile-icon {
+  text-decoration: none;
+  color: var(--on-surface-variant);
 }

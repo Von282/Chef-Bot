@@ -10,6 +10,7 @@ import {
   Quote,
   Leaf,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -52,12 +53,19 @@ function Home() {
             <div
               className="flex gap-3 mt-4 header-btn" /*style="{flex-wrap: wrap};"*/
             >
-              <a className="btn btn-primary ambient-shadow" href="#">
+              <Link
+                to={"/dashboard"}
+                className="btn btn-primary ambient-shadow"
+              >
                 Start Creating
                 <span className="material-symbols-outlined">
                   <ArrowRight strokeWidth={2.25} />
                 </span>
-              </a>
+              </Link>
+
+              {/* <a className="btn btn-primary ambient-shadow" href="#"> */}
+
+              {/* </a> */}
               <a className="btn btn-outline" href="#features">
                 See How It Works
               </a>

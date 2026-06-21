@@ -145,14 +145,14 @@
   margin-bottom: 32px;
 }
 
-.amount {
+.price > .amount {
   font-size: 48px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
 
-.currency {
+.price > .currency {
   color: var(--on-surface-variant);
 }
 
@@ -272,7 +272,8 @@
   margin-bottom: 4px;
 }
 
-.form-input {
+.form-input,
+.form-input-name {
   width: 100%;
   padding: 12px 16px;
   border-radius: var(--radius-lg);
@@ -336,8 +337,8 @@
   gap: 24px;
 }
 
-.name,
-.country {
+.card-name,
+.card-country {
   flex: 1;
 }
 

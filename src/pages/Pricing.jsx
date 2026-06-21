@@ -129,7 +129,7 @@ function Pricing() {
                   />
                 </div>
                 <div className="name-region">
-                  <div className="name">
+                  <div className="card-name">
                     <label htmlFor="name" className="form-label">
                       Name on card
                     </label>
@@ -138,11 +138,11 @@ function Pricing() {
                       name="name"
                       id="name"
                       placeholder="Full Name"
-                      className="form-input"
+                      className="form-input-name"
                       required
                     />
                   </div>
-                  <div className="country">
+                  <div className="card-country">
                     <label htmlFor="country" className="form-label">
                       Country or Region
                     </label>

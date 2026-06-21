@@ -214,6 +214,10 @@ body {
   margin-bottom: var(--section-gap);
 }
 
+.recipe-go-to {
+  text-decoration: none;
+}
+
 .recipe-card {
   background-color: var(--surface-container-lowest);
   border-radius: var(--radius-xl);
